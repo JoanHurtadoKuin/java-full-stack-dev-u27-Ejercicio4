@@ -10,10 +10,10 @@ public interface IInvestigadoresService {
 
 	public Investigadores guardarInvestigadores(Investigadores investigadores);
 
-	public Investigadores InvestigadoresXID(int codigo);
+	public Investigadores investigadoresXID(String dni);
 
 	public Investigadores actualizarInvestigadores(Investigadores investigadores);
 
-	public void eliminarInvestigadores(int codigo);
+	public void eliminarInvestigadores(String dni);
 
 }
