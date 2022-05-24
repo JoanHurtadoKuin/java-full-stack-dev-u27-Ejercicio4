@@ -5,47 +5,50 @@ Este repositorio corresponde a ejercicios realizados en la formación de Java Fu
 
 ![image](https://github.com/JoanHurtadoKuin/java-full-stack-dev-u26-Ejercicio4/blob/master/get.JPG)
 
-GET
+**GET**
 localhost:8080/facultad/
-POST
+
+**POST**
 localhost:8080/facultad/
-PUT
+
+**PUT**
 localhost:8080/facultad/
-DELETE
+
+**DELETE**
 localhost:8080/facultad/{codigo}
 
-GET
+**GET**
 localhost:8080/equipos/
 
-POST
+**POST**
 localhost:8080/equipos/
 
-PUT
+**PUT**
 localhost:8080/equipos/
 
-DELETE
+**DELETE**
 localhost:8080/equipos/{num_serie}
 
-GET
+**GET**
 localhost:8080/investigadores/
 
-POST
+**POST**
 localhost:8080/investigadores/
 
-PUT
+**PUT**
 localhost:8080/investigadores/
 
-DELETE
+**DELETE**
 localhost:8080/investigadores/{dni}
 
-GET
+**GET**
 localhost:8080/reserva/
 
-POST
+**POST**
 localhost:8080/reserva/
 
-PUT
+**PUT**
 localhost:8080/reserva/
 
-DELETE
+**DELETE**
 localhost:8080/reserva/{codigo}
