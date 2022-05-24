@@ -70,7 +70,7 @@ public class Equipos {
 	
 	
 	@JsonIgnore
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "Reserva")
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "reserva")
 	public List<Reserva> getReserva() {
 		return reserva;
 	}

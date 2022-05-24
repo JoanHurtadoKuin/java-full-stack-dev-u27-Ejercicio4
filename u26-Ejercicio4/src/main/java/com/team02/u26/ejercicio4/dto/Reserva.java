@@ -1,11 +1,14 @@
 package com.team02.u26.ejercicio4.dto;
 
-import java.sql.Date;
+
+
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -21,23 +24,23 @@ public class Reserva {
 	@Column(name = "fin")
 	private Date fin;
 
-	@OneToMany
-	@JoinColumn(name = "investigadores")
-	private Facultad facultad;
+	@ManyToOne
+	@JoinColumn(name = "dni")
+	private Investigadores investigadores;
 
-	@OneToMany
-	@JoinColumn(name = "equipos")
+	@ManyToOne
+	@JoinColumn(name = "num_serie")
 	private Equipos equipos;
 
 	public Reserva() {
 	
 	}
 
-	public Reserva(int codigo, Date comienzo, Date fin, Facultad facultad, Equipos equipos) {
+	public Reserva(int codigo, Date comienzo, Date fin, Investigadores investigadores, Equipos equipos) {
 		this.codigo = codigo;
 		this.comienzo = comienzo;
 		this.fin = fin;
-		this.facultad = facultad;
+		this.investigadores = investigadores;
 		this.equipos = equipos;
 	}
 
@@ -65,12 +68,13 @@ public class Reserva {
 		this.fin = fin;
 	}
 
-	public Facultad getFacultad() {
-		return facultad;
+
+	public Investigadores getInvestigadores() {
+		return investigadores;
 	}
 
-	public void setFacultad(Facultad facultad) {
-		this.facultad = facultad;
+	public void setInvestigadores(Investigadores investigadores) {
+		this.investigadores = investigadores;
 	}
 
 	public Equipos getEquipos() {
@@ -83,7 +87,7 @@ public class Reserva {
 
 	@Override
 	public String toString() {
-		return "Reserva [codigo=" + codigo + ", comienzo=" + comienzo + ", fin=" + fin + ", facultad=" + facultad
+		return "Reserva [codigo=" + codigo + ", comienzo=" + comienzo + ", fin=" + fin + ", facultad=" + investigadores
 				+ ", equipos=" + equipos + "]";
 	}
 	
