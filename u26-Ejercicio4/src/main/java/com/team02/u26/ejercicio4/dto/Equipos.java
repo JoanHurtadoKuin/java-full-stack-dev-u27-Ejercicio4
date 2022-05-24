@@ -21,7 +21,7 @@ public class Equipos {
 	
 	@Id
 	@Column(name = "num_serie")
-	private int numSerie;
+	private String numSerie;
 	@Column(name = "nombre")
 	private String nombre;
 
@@ -38,17 +38,17 @@ public class Equipos {
 
 	}
 
-	public Equipos(int numSerie, String nombre, Facultad facultad) {
+	public Equipos(String numSerie, String nombre, Facultad facultad) {
 		this.numSerie = numSerie;
 		this.nombre = nombre;
 		this.facultad = facultad;
 	}
 
-	public int getNumSerie() {
+	public String getNumSerie() {
 		return numSerie;
 	}
 
-	public void setNumSerie(int numSerie) {
+	public void setNumSerie(String numSerie) {
 		this.numSerie = numSerie;
 	}
 

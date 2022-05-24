@@ -21,7 +21,7 @@ public class Investigadores {
 	
 	@Id
 	@Column(name = "dni")
-	private int dni;
+	private String dni;
 	@Column(name = "nom_apels")
 	private String nomApels;
 
@@ -38,17 +38,17 @@ public class Investigadores {
     
     }
     
-	public Investigadores(int dni, String nomApels, Facultad facultad) {
+	public Investigadores(String dni, String nomApels, Facultad facultad) {
 		this.dni = dni;
 		this.nomApels = nomApels;
 		this.facultad = facultad;
 	}
 
-	public int getDni() {
+	public String getDni() {
 		return dni;
 	}
 
-	public void setDni(int dni) {
+	public void setDni(String dni) {
 		this.dni = dni;
 	}
 
