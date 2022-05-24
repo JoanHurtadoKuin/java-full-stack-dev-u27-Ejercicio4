@@ -16,27 +16,36 @@ localhost:8080/facultad/{codigo}
 
 GET
 localhost:8080/equipos/
+
 POST
 localhost:8080/equipos/
+
 PUT
 localhost:8080/equipos/
+
 DELETE
 localhost:8080/equipos/{num_serie}
 
 GET
 localhost:8080/investigadores/
+
 POST
 localhost:8080/investigadores/
+
 PUT
 localhost:8080/investigadores/
+
 DELETE
 localhost:8080/investigadores/{dni}
 
 GET
 localhost:8080/reserva/
+
 POST
 localhost:8080/reserva/
+
 PUT
 localhost:8080/reserva/
+
 DELETE
 localhost:8080/reserva/{codigo}
