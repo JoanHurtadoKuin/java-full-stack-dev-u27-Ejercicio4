@@ -9,7 +9,7 @@ public interface IReservaService {
 
 	public Reserva guardarReserva(Reserva reserva);
 
-	public Reserva ReservaXID(int codigo);
+	public Reserva reservaXID(int codigo);
 
 	public Reserva actualizarReserva(Reserva reserva);
 

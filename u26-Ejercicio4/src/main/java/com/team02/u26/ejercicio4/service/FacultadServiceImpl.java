@@ -27,7 +27,7 @@ public class FacultadServiceImpl implements IFacultadService{
 	}
 
 	@Override
-	public Facultad FacultadXID(int codigo) {
+	public Facultad facultadXID(int codigo) {
 		// TODO Auto-generated method stub
 		return iFacultadDAO.findById(codigo).get();
 	}

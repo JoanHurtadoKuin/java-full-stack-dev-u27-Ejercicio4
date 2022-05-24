@@ -11,7 +11,7 @@ public interface IFacultadService {
 
 	public Facultad guardarFacultad(Facultad facultad);
 
-	public Facultad FacultadXID(int codigo);
+	public Facultad facultadXID(int codigo);
 
 	public Facultad actualizarFacultad(Facultad facultad);
 

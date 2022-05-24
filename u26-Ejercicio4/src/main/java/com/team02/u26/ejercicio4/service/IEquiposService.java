@@ -10,7 +10,7 @@ public interface IEquiposService {
 
 	public Equipos guardarEquipos(Equipos equipos);
 
-	public Equipos EquiposXID(String numSerie);
+	public Equipos equiposXID(String numSerie);
 
 	public Equipos actualizarEquipos(Equipos equipos);
 

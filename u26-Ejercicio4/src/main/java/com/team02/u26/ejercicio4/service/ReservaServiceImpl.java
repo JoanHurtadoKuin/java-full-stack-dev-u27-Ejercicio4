@@ -25,7 +25,7 @@ public class ReservaServiceImpl implements IReservaService {
 	}
 
 	@Override
-	public Reserva ReservaXID(int codigo) {
+	public Reserva reservaXID(int codigo) {
 		return iReseravaDAO.findById(codigo).get();
 	}
 

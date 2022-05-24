@@ -25,7 +25,7 @@ public class EquiposServiceImpl implements IEquiposService {
 	}
 
 	@Override
-	public Equipos EquiposXID(String numSerie) {
+	public Equipos equiposXID(String numSerie) {
 		return iEquiposDAO.findById(numSerie).get();
 	}
 
