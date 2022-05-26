@@ -17,7 +17,7 @@ foreign key(codigo_facultad) references Facultad(codigo)
 on delete restrict on update cascade
 );
 
-create table Equipos(
+create table equipos(
 num_serie char(4) primary key,
 nombre varchar(255),
 codigo_facultad int,
