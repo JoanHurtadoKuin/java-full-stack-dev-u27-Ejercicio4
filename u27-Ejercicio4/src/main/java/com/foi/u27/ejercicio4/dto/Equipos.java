@@ -30,7 +30,7 @@ public class Equipos {
 	private List<Reserva> reserva;
 	
     @ManyToOne
-    @JoinColumn(name="codigo")
+    @JoinColumn(name="codigo_facultad")
     private Facultad facultad;
 
     
